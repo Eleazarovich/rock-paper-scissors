@@ -51,9 +51,11 @@ function getWinnerPerRound(roundResult) {
 
 function showOverallWinner() {
     if (humanScore > computerScore) {
-        console.log(`You won! ${humanScore} to ${computerScore} agaist the computer.`);
+        console.log(`You won! ${humanScore} to ${computerScore} against the computer.`);
+    } else if (humanScore == computerScore) {
+        console.log(`You drew ${humanScore} to ${computerScore} against the computer`);
     } else {
-        console.log(`You lost! ${humanScore} to ${computerScore} agaist the computer.`);
+        console.log(`You lost! ${humanScore} to ${computerScore} against the computer.`);
     }
 }
 
